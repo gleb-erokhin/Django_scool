@@ -16,9 +16,12 @@ def set_func():
     print(a, b, c, d)
 
 
-# картежи
+# картежи, не изменны, заменить добавить данные невозожно
 def tuple_list():
     list_numbers = (1, 2, 3, 4, 5)  # картеж
+    print(list_numbers)
+
+    list_numbers = (1, 'Hi', [3, 4], 5)  # картеж
     print(list_numbers)
 
 tuple_list()
