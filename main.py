@@ -110,7 +110,20 @@ def play_list_sorted():
     # тут создается картеж и менется местами занчения
     print(play_list)
 
+# работа со словарем
+def dict_list():
+    contacts = {'Petya': 12345678, 'Lena': 987456321, 'Andru': 95175325}
+    print(contacts, 'чистый список')
+    # заменить значение ключа
+    contacts['Petya'] = 10101010101
+    print(contacts, 'заменили значении Пети')
+    # добавим новый ключ
+    contacts['John'] = 987654321
+    print(contacts, 'добавили новый ключ/знач.')
+    # если вызвать значение которого нет, будет ошибка
+    # чтобы ее небыло воспользуемся меодом get
+    print(contacts.get('Dasha'))
+    print(contacts.get('Dasha', "Error"))  # error будет вместо None
 
-play_list_sorted()
 
-
+dict_list()
