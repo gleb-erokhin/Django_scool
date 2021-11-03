@@ -31,6 +31,7 @@ def phone_book():
             if contacts.get(name):
                 tel = input('Введите телефон:\n')
                 contacts.update({name: tel})
+                # contacts[name] = tel   # второй вариант записи изменений
                 print(f'Контакт {name} изменен')
                 print(f'Данные {contacts} обновлены')
             else:
